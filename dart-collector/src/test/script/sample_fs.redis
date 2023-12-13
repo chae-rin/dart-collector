@@ -1,0 +1,6 @@
+RPUSH FS:C001:F001 "{\"SN\": \"S001\", \"C1\": 5, \"C2\": 2}"
+RPUSH FS:C001:F001 "{\"name\": \"홍길동\", \"interestRate\": \"1.0\"}"
+RPUSH FS:C001:F001 "{\"SN\": \"S002\", \"C1\": 5, \"C2\": 2}"
+RPUSH FS:C001:F001 "{\"name\": \"홍길동\", \"interestRate\": \"2.0\"}"
+RPUSH FS:C001:F001 "{\"SN\": \"S003\", \"C1\": 5, \"C2\": 2}"
+RPUSH FS:C001:F001 "{\"name\": \"홍길동\", \"interestRate\": \"3.0\"}"

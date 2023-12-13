@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "8cea42d3-4e28-4a1a-a1f5-77d0197a7405",
+		"name": "collect-dart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31756288"
+	},
+	"item": [
+		{
+			"name": "D01 - 고유번호",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/disclosure/unique_num?crtfc_key=97e1792c560676d2a4e8d575327b3c68964c771b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"disclosure",
+						"unique_num"
+					],
+					"query": [
+						{
+							"key": "crtfc_key",
+							"value": "97e1792c560676d2a4e8d575327b3c68964c771b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "C01 - 단일회사 전체 재무제표",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"crtfc_key\": \"97e1792c560676d2a4e8d575327b3c68964c771b\",\n    \"corp_code\": \"00434003\",\n    \"bsns_year\": \"2017\",\n    \"reprt_code\": \"11013\",\n    \"fs_div\": \"OFS\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/financial/all"
+			},
+			"response": []
+		}
+	]
+}
